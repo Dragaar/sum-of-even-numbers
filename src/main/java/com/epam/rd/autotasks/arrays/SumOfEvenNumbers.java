@@ -9,9 +9,13 @@ public class SumOfEvenNumbers {
     }
 
     public static int sum(int[] array){
+        if(array == null ||  array.length == 0 ) return 0;
+        int sum = 0;
 
-        //put your code here
-
-        throw new UnsupportedOperationException();
+        for(int num : array) {
+            if ((num % 2) == 0) sum +=num;
+        }
+        return sum;
+       /// throw new UnsupportedOperationException();
     }
 }
